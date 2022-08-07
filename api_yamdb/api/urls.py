@@ -2,7 +2,7 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 from rest_framework import routers
 
-from api import views
+from api_yamdb.api import views
 
 API_VERSION = 'v1'
 

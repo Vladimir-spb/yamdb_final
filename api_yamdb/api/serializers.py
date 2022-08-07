@@ -4,7 +4,6 @@ from rest_framework import exceptions, relations, serializers, validators
 from rest_framework.generics import get_object_or_404
 from rest_framework_simplejwt.serializers import TokenObtainSerializer
 from rest_framework_simplejwt.tokens import AccessToken
-
 from reviews.models import Category, Comment, Genre, Review, Title
 
 User = get_user_model()
