@@ -8,7 +8,7 @@ services:
       - ./.env
   # web:
   #   build: ../api_yamdb
-  #   image: martine102/yamdb_final_web:latest
+  #   image: martine102/yamdb_final:latest
   #   restart: always
   #   volumes:
   #     - static_value:/app/static/
