@@ -9,15 +9,14 @@ from django_filters.rest_framework.backends import DjangoFilterBackend
 from rest_framework import (filters, permissions, response, status, views,
                             viewsets)
 from rest_framework_simplejwt.views import TokenViewBase
-
-from api_yamdb.api import serializers as api_serializers
-from api_yamdb.api.filters import TitleFilter
-from api_yamdb.api.mixins import CreateListDeleteViewSet
-from api_yamdb.api.permissions import (UserIsAuthorOrAdmin,
-                                       UserRoleIsAllowedRole,
-                                       UserRoleIsAllowedRoleOrReadOnly)
-from api_yamdb.reviews.models import Category, Genre, Review, Title
-from api_yamdb.users.models import ConfirmationCode
+from api import serializers as api_serializers
+from api.filters import TitleFilter
+from api.mixins import CreateListDeleteViewSet
+from api.permissions import (UserIsAuthorOrAdmin,
+                             UserRoleIsAllowedRole,
+                             UserRoleIsAllowedRoleOrReadOnly)
+from reviews.models import Category, Genre, Review, Title
+from users.models import ConfirmationCode
 
 User = get_user_model()
 
