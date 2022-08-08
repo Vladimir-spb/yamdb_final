@@ -6,17 +6,17 @@ services:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
-  # web:
-  #   build: ../api_yamdb
-  #   image: martine102/yamdb_final:latest
-  #   restart: always
-  #   volumes:
-  #     - static_value:/app/static/
-  #     - media_value:/app/media/
-  #   depends_on:
-  #     - db
-  #   env_file:
-  #     - ./.env
+  web:
+    # build: ../api_yamdb
+    image: martine102/yamdb_final:latest
+    restart: always
+    volumes:
+      - static_value:/app/static/
+      - media_value:/app/media/
+    depends_on:
+      - db
+    env_file:
+      - ./.env
   nginx:
     image: nginx:1.21.3-alpine
     ports:
@@ -26,8 +26,8 @@ services:
       - static_value:/var/html/static/
       - media_value:/var/html/media/
       - ../docs/:/app/docs/
-    # depends_on:
-    #   - web
+    depends_on:
+      - web
 volumes:
   static_value:
   media_value:
