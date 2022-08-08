@@ -26,8 +26,8 @@ services:
       - static_value:/var/html/static/
       - media_value:/var/html/media/
       - ../docs/:/app/docs/
-    depends_on:
-      - web
+    # depends_on:
+    #   - web
 volumes:
   static_value:
   media_value:
