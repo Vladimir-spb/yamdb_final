@@ -67,6 +67,7 @@ jobs:
           # Если ваш ssh-ключ защищён фразой-паролем
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final_web:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
