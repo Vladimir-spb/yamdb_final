@@ -12,6 +12,12 @@
 [![GitHub%20Actions](https://img.shields.io/badge/-GitHub%20Actions-464646?style=flat&logo=GitHub%20actions&logoColor=56C0C0&color=008080)](https://github.com/features/actions)
 [![Yandex.Cloud](https://img.shields.io/badge/-Yandex.Cloud-464646?style=flat&logo=Yandex.Cloud&logoColor=56C0C0&color=008080)](https://cloud.yandex.ru/)
 
+## Развёрнутый проект
+http://51.250.97.235/api/v1/
+http://51.250.97.235/admin/
+http://51.250.97.235/redoc/
+
+
 # CI/CD для проекта API YAMDB
 
 ## Описание проекта
