@@ -37,7 +37,7 @@ router_v1.register(r'genres', views.GenreViewSet, basename='genres')
 app_name = 'api'
 urlpatterns = [
     path(
-        f'{API_VERSION}/redoc/',
+        'redoc/',
         TemplateView.as_view(template_name='redoc.html'),
         name='redoc',
     ),
